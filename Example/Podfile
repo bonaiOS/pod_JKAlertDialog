@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+
+target 'pod_JKAlertDialog_Tests', :exclusive => true do
+  pod "pod_JKAlertDialog", :path => "../"
+
+  
+end

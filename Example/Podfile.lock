@@ -1,0 +1,14 @@
+PODS:
+  - pod_JKAlertDialog (0.1.0)
+
+DEPENDENCIES:
+  - pod_JKAlertDialog (from `../`)
+
+EXTERNAL SOURCES:
+  pod_JKAlertDialog:
+    :path: ../
+
+SPEC CHECKSUMS:
+  pod_JKAlertDialog: 08c804c87e3f7b31379a9acd3266d13ddfabd5a1
+
+COCOAPODS: 0.39.0

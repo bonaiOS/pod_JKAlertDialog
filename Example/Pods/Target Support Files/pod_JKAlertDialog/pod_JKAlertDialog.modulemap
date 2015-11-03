@@ -1,0 +1,6 @@
+framework module pod_JKAlertDialog {
+  umbrella header "pod_JKAlertDialog-umbrella.h"
+
+  export *
+  module * { export * }
+}
