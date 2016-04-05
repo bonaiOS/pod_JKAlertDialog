@@ -33,6 +33,9 @@
      _coverView = [[UIView alloc]initWithFrame:self.frame];
     _coverView.backgroundColor = [UIColor blackColor];
     _coverView.alpha = 0;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped)];
+    tap.cancelsTouchesInView = NO;
+    [_coverView addGestureRecognizer:tap];
 
     [self addSubview:_coverView];
     
@@ -71,6 +74,11 @@
     [_alertView addSubview:_contentScrollView];
 
 
+}
+//点击阴影处取消弹窗
+-(void)viewTapped
+{
+    [self dismiss];
 }
 -(void)layoutSubviews{
     _buttonScrollView.frame = CGRectMake(0, _alertView.frame.size.height-MenuHeight,_alertView.frame.size.width, MenuHeight);
